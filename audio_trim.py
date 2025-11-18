@@ -1,3 +1,6 @@
+#IT TRIMS ONLY FOR CONVERTING YOUTUBE URL'S
+
+
 # import yt_dlp
 # import moviepy.editor as mp
 # import os
@@ -70,6 +73,8 @@
 
 
 
+#AUDIO FILE TRIMS INTO 10 SECONDS AUDIO FILE
+#IT SUPPORTS TO TRIM BOTH YOUTUBE URL'S AND .MP3 FILES ALSO 
 
 
 import yt_dlp
@@ -77,7 +82,7 @@ import moviepy.editor as mp
 import os
 import re
 
-OUTPUT_FOLDER = "trimmed_audio"
+OUTPUT_FOLDER = "trimmed_audio"    #It is the folder, all the trimmed audios are saved into this folder
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 def sanitize_filename(name):
@@ -137,6 +142,6 @@ def process_audio(source, duration=10):
         trim_audio(audio_path, duration)
 
 # Example usage
-source = r"https://youtube.com/shorts/AKHx_Gp6ui4?si=JEqYiT7fvIbzv-6A"
-# source = r"C:/Users/Admin/Desktop/Audio_Noise Reduction_Video_Trim/downloaded_audio/trending.mp3"
+source = r"https://youtube.com/shorts/AKHx_Gp6ui4?si=JEqYiT7fvIbzv-6A"    #YOUTUBE URL'S
+# source = r"C:/Users/Admin/Desktop/Audio_Noise Reduction_Video_Trim/downloaded_audio/trending.mp3"   #MP3 file URL
 process_audio(source, duration=10)

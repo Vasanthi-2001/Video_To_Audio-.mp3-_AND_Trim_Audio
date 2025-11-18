@@ -1,7 +1,7 @@
 import yt_dlp
 import os
 
-OUTPUT_FOLDER = "downloaded_audio"
+OUTPUT_FOLDER = "downloaded_audio" #this is folder, generated audios will be save into this folder
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 def youtube_to_audio(video_link):
@@ -22,5 +22,5 @@ def youtube_to_audio(video_link):
         print("Error:", e)
 
 # Example
-video_link = "https://youtube.com/shorts/YhUVgmdXoUA?si=kuc1M7rPpOmY8Pnt"
+video_link = "https://youtube.com/shorts/YhUVgmdXoUA?si=kuc1M7rPpOmY8Pnt" #paste your youtube link here
 youtube_to_audio(video_link)
