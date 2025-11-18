@@ -1,0 +1,8 @@
+-> python -m venv_audio
+->activate it: .\venv_audio\Scripts\activate
+->ctrl+shift+P (select interpreter)->python-3.13.x
+
+audio_trim file:
+
+->when we want to add a youtube link we should mention 'r'before past the link.
+->source = r"https://youtube.com/shorts/AKHx_Gp6ui4?si=JEqYiT7fvIbzv-6A"
