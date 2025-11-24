@@ -8,7 +8,7 @@ import re
 
 from source import source
 
-OUTPUT_FOLDER = "trimmed_audio"
+OUTPUT_FOLDER = "trimmed_audio" #saved trimmed audio files to this folder
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 def sanitize_filename(name):
@@ -73,5 +73,5 @@ def process_audio(source, duration=10):
         trim_last_seconds(audio_path, duration)
 
 # Example usage:
-source = r"C:\Users\Admin\Desktop\YT_Video_to_Audio_AND_audio_Trim\downloaded_audio\Infinity Reference Audio3.mp3"
+source = r"C:\Users\Admin\Desktop\YT_Video_to_Audio_AND_audio_Trim\downloaded_audio\Infinity Reference Audio3.mp3" #add either youtube link or .mp3 file
 process_audio(source, duration=10)
