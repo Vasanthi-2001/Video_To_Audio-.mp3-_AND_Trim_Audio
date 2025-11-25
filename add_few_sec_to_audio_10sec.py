@@ -1,3 +1,8 @@
+#adding seconds to the audio as how many seconds we want
+#It accepts youtube URLs,.mp3 files and .wav files
+
+
+
 import librosa
 import soundfile as sf
 import numpy as np
@@ -5,7 +10,7 @@ import yt_dlp
 import os
 
 # Only one folder
-OUTPUT_FOLDER = "extended_audio"
+OUTPUT_FOLDER = "extended_audio" #extended audio will be saved into this folder
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 INPUT_AUDIO = input("Enter audio file path or YouTube link: ").strip()
