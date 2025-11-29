@@ -1,9 +1,13 @@
+#select particular few seconds from audio downloaded from youtube or locan mp3 file
+# we will able to add the start time and end time in mm:ss format
+
+
 import yt_dlp
 import moviepy.editor as mp
 import os
 import re
 
-OUTPUT_FOLDER = "Trim_specific_range_from_audio"
+OUTPUT_FOLDER = "Trim_specific_range_from_audio" #saved trimmed audio files to this folder
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 # -----------------------------------------
